@@ -15,9 +15,3 @@ and then install the dependencies
     cd okbommer && npm i
 
 
-### TODO List
-
-|    |Theo|Sharah|Richard|
-|---:|:--:|:----:|:-----:|
-|Task|Apprendre express lol|Installer yarn lol|finir le projet|
-
