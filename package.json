@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/theomi/okboomer#readme",
   "dependencies": {
-    "express.js": "^1.0.0"
+    "express.js": "^1.0.0",
+    "mongoose": "^5.10.13"
   }
 }
