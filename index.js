@@ -1,11 +1,21 @@
-const express = require('express')
-const app = express()
-const port = 3000
-
+const express = require('express');
+const cors = require('cors');
+const bodyParser = require('body-parser');
+const morgan = require('morgan');
+ 
+const app = express();
+ 
+app.use(morgan('tiny'));
+app.use(cors());
+app.use(bodyParser.json());
+ 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
-
+    res.json({
+        message: 'Behold The the ok boomer site'
+    });
+});
+ 
+const port = process.env.PORT || 4000;
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
-})
+    console.log(`listening on ${port}`);
+});

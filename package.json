@@ -21,7 +21,9 @@
   },
   "homepage": "https://github.com/theomi/okboomer#readme",
   "dependencies": {
+    "@vue/cli": "^4.5.8",
     "express.js": "^1.0.0",
-    "mongoose": "^5.10.13"
+    "mongoose": "^5.10.13",
+    "morgan": "^1.10.0"
   }
 }
