@@ -1,0 +1,26 @@
+{
+  "name": "okboomer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theomi/okboomer.git"
+  },
+  "keywords": [
+    "OK",
+    "BOOMER"
+  ],
+  "author": "Sarah Jallon, Theo Mirabille, Richard Tenorio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/theomi/okboomer/issues"
+  },
+  "homepage": "https://github.com/theomi/okboomer#readme",
+  "dependencies": {
+    "express.js": "^1.0.0"
+  }
+}
