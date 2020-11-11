@@ -4,9 +4,9 @@ let {validateData} = require('../utils/validation.utils');
 
 
 exports.get = async(req, res) => {
-    let err = validationResult(req);
+    let err = validateData(req);
 
-    if(!err.isEmpty()){
+    if(err){
         res.status(400).json(err);
     } else {
         //use QuoteModel.aFunction to get things from db 
