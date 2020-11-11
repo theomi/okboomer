@@ -8,18 +8,16 @@ const app = express();
  
 app.use(morgan('tiny'));
 app.use(cors());
+
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 let quoteRoute = require('./routes/quote.route');
+let mainRoute = require('./routes/main.route');
  
 
-app.use('/api/quote', quoteRoute);
-
-app.get('/', (req, res) => {
-    res.json({
-        message: 'Behold The the ok boomer site'
-    });
-});
+app.use('/', mainRoute);
+app.use('/quotes', quoteRoute);
  
 // TODO: put that on the a config file ?
 const port = process.env.PORT || 4000;
