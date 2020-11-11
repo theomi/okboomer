@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev" : "node app.js"
+    "dev": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
   "homepage": "https://github.com/theomi/okboomer#readme",
   "dependencies": {
     "@vue/cli": "^4.5.8",
+    "express-validator": "^6.6.1",
     "express.js": "^1.0.0",
     "mongoose": "^5.10.13",
     "morgan": "^1.10.0"
