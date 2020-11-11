@@ -6,7 +6,7 @@ let QuoteSchema = new Schema({
     id: {type: Schema.Types.ObjectId, required: true},
     name: {type: String, required: true},
     author: {type: String, required: true},
-    date: {type: Schema.Types.date, required: true} 
+    date: {type: Schema.Types.Date, required: true} 
 });
 
 module.exports = mongoose.model('Quote', QuoteSchema);
