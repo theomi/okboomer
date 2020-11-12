@@ -1,14 +1,23 @@
 
 let QuoteModel = require('../models/Quotes');
-let {validateData} = require('../utils/validation.utils');
 
+exports.getQuotes = async(req, res) => {
+    await QuoteModel.find({}, (err,data) => {
+        if(!err){
+            res.json(data);
+        } else {
+            res.json({message: "error"});
+        }
+    })
+}
 
-exports.get = async(req, res) => {
-    let err = validateData(req);
-
-    if(err){
-        res.status(400).json(err);
-    } else {
-        //use QuoteModel.aFunction to get things from db 
-    }
+exports.getQuotesById = async(req, res) => {
+    id = req.params.id;
+    await QuoteModel.findById({_id: id}, (err, data) => {
+        if(!err){
+            res.json(data);
+        } else {
+            res.json({message: "error"});
+        }
+    });
 }
